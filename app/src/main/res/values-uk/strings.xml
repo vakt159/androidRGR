@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">РГР</string>
+    <string name="search">Пошук</string>
+    <string name="no_repositories">Немає запусків</string>
+    <string name="some_error_happened_upon_loading_the_list">Сталася помилка</string>
+    <string name="sime_repository_name">Ім\'я польоту</string>
+    <string name="some_description_here">Опис польоту</string>
+    <string name="launch_name">Ім\'я місії</string>
+    <string name="launch_number">Номер польоту</string>
+    <string name="rocket_name">Назва ракети</string>
+    <string name="rocket_type">Тип ракети</string>
+    <string name="mission_name_full">Назва місії</string>
+    <string name="launch_year_full">Рік польоту</string>
+    <string name="launch_site">Ім\'я аеродрому</string>
+
+</resources>

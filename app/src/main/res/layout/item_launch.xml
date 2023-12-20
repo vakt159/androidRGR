@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:maxHeight="100dp"
+    tools:layout_editor_absoluteX="55dp"
+    tools:layout_editor_absoluteY="4dp"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/missionName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_light"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:text="Launch number" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

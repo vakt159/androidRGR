@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.MainActivity"
+    android:background="@drawable/gradient"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/launchYearText"
+        android:layout_width="150dp"
+        android:fontFamily="@font/montserrat_bold"
+
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/launch_year_full"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/launchNumberText" />
+
+    <TextView
+        android:id="@+id/launchNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/launch_number"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_medium"
+
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toEndOf="@+id/launchNumberText"
+        app:layout_constraintTop_toBottomOf="@+id/missionName" />
+
+    <TextView
+        android:id="@+id/missionName"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:scrollbars="vertical"
+        android:text="@string/mission_name_full"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.887" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/mission_name_full"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/launchNumberText"
+        android:layout_width="153dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/launch_number"
+
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/launchYear"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginRight="20dp"
+        android:text="Launch year"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:fontFamily="@font/montserrat_medium"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toEndOf="@+id/launchYearText"
+        app:layout_constraintTop_toBottomOf="@+id/launchNumber" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Launch information"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/rocketNameText"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/montserrat_medium"
+
+
+        android:layout_marginTop="40dp"
+        android:text="@string/rocket_name"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/launchYearText" />
+
+    <TextView
+        android:id="@+id/rocketTypeText"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/rocket_type"
+        android:fontFamily="@font/montserrat_bold"
+
+        android:textStyle="bold"
+
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rocketNameText" />
+
+    <TextView
+        android:id="@+id/launchSiteText"
+        android:layout_width="151dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/launch_site"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rocketTypeText" />
+
+    <TextView
+        android:id="@+id/rocketName"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/rocket_name"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:fontFamily="@font/montserrat_medium"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintStart_toEndOf="@+id/rocketNameText"
+        app:layout_constraintTop_toBottomOf="@+id/launchYear" />
+
+    <TextView
+        android:id="@+id/rocketType"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/rocket_type"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.008"
+        app:layout_constraintStart_toEndOf="@+id/rocketTypeText"
+        app:layout_constraintTop_toBottomOf="@+id/rocketName" />
+
+    <TextView
+        android:id="@+id/launchSite"
+        android:layout_width="170dp"
+        android:layout_height="68dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/launch_site"
+        android:textColor="@color/white"
+
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toEndOf="@+id/launchSiteText"
+        app:layout_constraintTop_toBottomOf="@+id/rocketType" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
